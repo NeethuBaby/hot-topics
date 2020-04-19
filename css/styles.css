@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.head {
+  width: 100%;
+  background-image: url("./../img/mast-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  list-style-type: none;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: serif;
+  line-height: 1.5;
+}
+
+.flex-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-value-item: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  order: 3;
+}
+
+.flex-item.nav-item {
+  padding: 10px 0;
+  margin: 15px auto;
+  background-color: #f09329;
+  width: 80%;
+}
+
+.flex-item.logo a img {
+  width: 100px;
+  padding-top: 20px;
+}
+.flex-item.logo h1 {
+  font-size: 20px;
+  padding: 10px 0 20px 0;
+}
+
+.nav {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: #f09329;
+}
+
+.foot {
+  background-color: #f09329;
+  padding: 15px 0;
+}
+
+.right ul li {
+  display: inline;
+}
+
+a .fa {
+  font-size: 25px;
+  margin: 5px 3%;
+  padding: 2px 5px;
+  color: black;
+}
+
+.left,
+.right {
+  width: 80%;
+  float: both;
+  text-align: center;
+  margin: 10px auto;
+}
+.left.center img {
+  width: 85px;
+}
+.left.center {
+  text-align: center;
+}
+.left.center h1 {
+  font-size: 20px;
+}
+.left.center h2 {
+  font-size: 15px;
+}
+
+.foot-center h3 {
+  text-align: center;
+}
+
+.value-item h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.value-item {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.value-item h1 {
+  font-size: 20px;
+}
+
+hr {
+  margin: 20px 0 ;
+  width: 100%;
+  border-top: 3px solid black;
+}
+
+.left-img,
+.right {
+  float: none;
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.left-img img {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.left-img h1 {
+  text-align: center;
+}
+
+figure figcaption {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 10px auto;
+}
+
+.images figure img {
+  width: 95%;
+  height: 300px;
+}
+
+.images {
+  width: 93%;
+  display: block;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 30px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: normal;
+}
+.images figure {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 80rem) and (min-width: 35rem) {
+  p {
+    font-size: 1rem;
+  }
+  .flex-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-item.logo {
+    width: 100%;
+  }
+  .flex-item {
+    display: block;
+    order: 1;
+    width: 48%;
+    margin: 0px auto;
+  }
+  .flex-item.nav-item {
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 48%;
+  }
+  .flex-item.logo a img {
+    width: 120px;
+    padding-top: 30px;
+  }
+  .flex-item.logo h1 {
+    font-size: 30px;
+    padding: 15px 0 40px 0;
+  }
+  .nav {
+    padding: 10px 20%;
+    font-size: 23px;
+  }
+  a .fa {
+    font-size: 35px;
+    margin: 5px 0.5%;
+  }
+  .left,
+  .right {
+    width: 40%;
+    float: left;
+    margin: 10px 2.5%;
+  }
+  .left.center img {
+    width: 95px;
+  }
+  .left.center {
+    text-align: left;
+  }
+  .left.center h1 {
+    font-size: 20px;
+  }
+  .left.center h2 {
+    font-size: 16px;
+  }
+
+  .right.center {
+    text-align: right;
+  }
+  .value-item h1 {
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .left-img {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+  .left-img img {
+    width: 85%;
+    height: 270px;
+  }
+  .images {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .heading {
+    font-size: 40px;
+    padding: 17px 0;
+  }
+  .images figure {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  figure figcaption {
+    font-size: 28px;
+    margin: 7px auto 20px auto;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  p {
+    font-size: 1.25rem;
+  }
+  ul,
+  li {
+    display: inline;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-item {
+    display: block;
+    order: 1;
+    width: 33%;
+    margin: 0px auto;
+  }
+  .flex-item.nav-item {
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 33%;
+  }
+  .flex-item.logo a img {
+    width: 45%;
+    padding-top: 30px;
+  }
+  .flex-item.logo h1 {
+    font-size: 35px;
+    padding: 10px 0;
+  }
+  .nav {
+    padding: 10px 20%;
+    font-size: 25px;
+  }
+  .left,
+  .right {
+    width: 40%;
+    float: left;
+    margin: 10px 2.5%;
+  }
+  .left.center img {
+    width: 125px;
+  }
+  .left.center {
+    text-align: left;
+  }
+
+  .right.center {
+    text-align: right;
+  }
+  a .fa {
+    font-size: 50px;
+  }
+  .value-item h1 {
+    font-size: 35px;
+    padding: 25px 0;
+    text-align: center;
+  }
+  .left-img {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+  .left-img img {
+    width: 85%;
+    height: 300px;
+  }
+  .images {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .heading {
+    font-size: 50px;
+    text-align: center;
+    padding: 27px 0;
+  }
+  .images figure {
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    font-size: 30px;
+    margin: 10px auto 25px auto;
+  }
+}
